@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    color: #333;
+    font: 2em Helvetica, sans-serif;
+    padding: 1em;
+    text-align: center;
+}
+
+article {
+    display: block;
+    margin: 0 auto;
+    max-width: 650px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+a {
+    color: #dc8100;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+p {
+    margin: 1em 0;
+}
+
+.homer-sleeping {
+    background: url(img/homer_sleeping.png) left -3em bottom -14.5em no-repeat;
+}
+
+.homer-doh {
+    background: url(img/homer_oo.png) no-repeat;
+    background-position: right bottom;
+    background-size: 50%;
+}
+
+
+@media (min-width: 576px) {
+  /* Small devices (landscape phones, 576px and up) */
+
+  .homer-doh {
+    background-size: 45%;
+  }
+}
+
+
+@media (min-width: 768px) {
+  /* Medium devices (tablets, 768px and up) */
+
+  body {
+    padding: 2em;
+  }
+
+  .homer-doh {
+    background-size: 40%;
+  }
+}
+
+
+@media (min-width: 992px) {
+  /* Large devices (desktops, 992px and up) */
+  
+  h1 {
+    font-size: 50px;
+  }
+
+  body {
+    padding: 7.5em;
+  }
+
+  .homer-doh {
+    background-size: 35%;
+  }
+
+  .homer-sleeping {
+    background-position: bottom -13em;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  /* Extra large devices (large desktops, 1200px and up) */
+  .homer-doh {
+    background-size: 30%;
+  }
+}
